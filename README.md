@@ -1,8 +1,6 @@
 # Yolo v8 App
-[WebApp Link](https://yolov8-webapp.streamlit.app)  
+ 
 A Streamlit-based web application for running various computer vision tasks using YOLO v8 models.
-
-...
 
 ---
 Run program with this command:
