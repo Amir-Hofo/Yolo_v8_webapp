@@ -1,4 +1,4 @@
-from webapp import *
+from app import *
 
 subprocess.run(["pip", "install", "./assets/ultralytics"], check= True)
 
