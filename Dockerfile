@@ -1,9 +1,13 @@
-FROM python:3.10-slim
+FROM ultralytics/ultralytics:latest
 
 WORKDIR /app
 
 # install libgl1
-RUN apt-get update && apt-get install -y libgl1
+RUN apt-get update && apt-get install -y \
+    libglib2.0-0 \
+    libsm6 \
+    libxext6 \
+    libxrender1
 
 # Copy the requirements file first, to leverage Docker cache efficiently
 COPY requirements.txt .
