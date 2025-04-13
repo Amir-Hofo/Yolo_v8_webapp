@@ -5,6 +5,9 @@ docker login
 ```
 
 # create Dockerfile
+```bash
+docker init
+```
 
 # create image file
 ```bash
