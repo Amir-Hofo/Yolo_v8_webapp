@@ -1,4 +1,4 @@
-FROM ultralytics/ultralytics:latest
+FROM python:3.10.16-slim
 
 WORKDIR /app
 
@@ -21,6 +21,9 @@ COPY app/ app/
 COPY utils/ utils/
 COPY predict/ predict/
 COPY assets/ assets/
+
+# install ultralytics
+RUN pip install ./assets/ultralytics
 
 # Ensure necessary directories are created
 RUN mkdir -p assets/uploads runs
